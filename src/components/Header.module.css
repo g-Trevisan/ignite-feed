@@ -1,4 +1,6 @@
-.Header{
-    background: #6f6262;
-    height: 30px;
+.header{
+    background: var(--gray-800);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 0;
 }
