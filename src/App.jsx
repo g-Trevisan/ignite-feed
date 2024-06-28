@@ -1,5 +1,7 @@
 import { Header } from './components/Header';
-import { Post } from './Post';
+import { Sidebar } from './components/Sidebar';
+import { Post } from './components/Post';
+import styles from './components/App.module.css';
 import './global.css';
 
 
@@ -8,14 +10,19 @@ export function App() {
   return (
     <div>
       <Header/>
-      <Post 
-        author="Gustavo Trevisan" 
-        content = "Lorem ipsum dolor sist amet consectetur adipisicing elit." 
-      />
-      <Post 
-        author="Rocket Seat" 
-        content = "Teste de conteudo para reaproveitamento de componente" 
-      />
+      <div className={styles.wrapper}>
+        <Sidebar/>
+        <main>
+          <Post
+            author="Gustavo trevisan"
+            content="Texto aqui Textoa aqui Texto aqui Textoa aqui Texto aqui Textoa aqui Texto aqui Textoa aqui"
+          />
+          <Post
+            author="Thomas Turbano"
+            content="Texto aqui Textoa aqui Texto aqui Textoa aqui Texto aqui Textoa aqui Texto aqui Textoa aqui"
+          />
+        </main>
+      </div>
     </div>
   )
 }
