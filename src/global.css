@@ -1,4 +1,5 @@
 :root{
+    /* definindo cores padrão do projeto no arquivo global css */
     --white: #fff;
     --gray-100: #e1e1e6;
     --gray-300: #c4c4c6;
@@ -16,6 +17,7 @@
 }
 
 :focus{
+    /* alterando  */
     outline: transparent;
     box-shadow: 0 0 0 2px var(--green-500);
 }
@@ -35,5 +37,5 @@ body{
 body, input, textarea, button {
     font-family: 'Robot', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1rem; /* 1rem equivale a 16px (fonte padrao do sistema) */
 }
